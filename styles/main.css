@@ -1,0 +1,172 @@
+:root {
+  --primary-color-500: #34cb79;
+  --primary-color-400: #2fb86e;
+  --desaturado: #e1faec;
+  --title-color: #322153;
+  --textos: #6c6c80;
+  --textos-suporte: #a0a0b2;
+  --white: #fff;
+  --background: #f0f0f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--title-color);
+}
+
+#page-home {
+  height: 100vh;
+
+  background: url('../assets/home-background.svg') no-repeat;
+  background-position: 35vw bottom;
+
+  margin-top: 3rem;
+}
+
+#page-home .content {
+  width: 90%;
+  max-width: 70rem;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-home header .logo {
+  margin-right: 1rem;
+}
+
+#page-home header a {
+  display: flex;
+
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+#page-home header a span {
+  background: url('../assets/log-in.svg') no-repeat;
+
+  width: 2rem;
+  hight: 2rem;
+}
+
+#page-home main {
+  max-width: 35rem;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home main h1 {
+  font-size: 3.375rem;
+}
+
+#page-home main p {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  margin-top: 1.5rem;
+}
+
+#page-home main a {
+  display: flex;
+  align-items: center;
+
+  border-radius: 8px;
+
+  width: 100%;
+  max-width: 22.5rem;
+  height: 4.5rem;
+
+  background-color: var(--primary-color-500);
+
+  margin-top: 2.5rem;
+
+  transition: 0.3s;
+}
+
+#page-home main a:hover {
+  background-color: var(--primary-color-400);
+}
+
+#page-home main a span {
+  width: 4.5rem;
+  height: 4.5rem;
+
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  background-color: rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-home main a span::after {
+  content: '';
+  background: url('../assets/search.svg') no-repeat;
+
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#page-home main a strong {
+  color: var(--white);
+
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home header a {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #page-home main {
+    align-items: center;
+  }
+
+}
