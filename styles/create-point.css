@@ -33,6 +33,9 @@ form {
   background: var(--white);
   border-radius: 8px;
 
+  display:flex;
+  flex-direction: column;
+
   margin: 5rem auto;
 
   max-width: 45.625rem;
@@ -48,7 +51,7 @@ form fieldset {
   margin-top: 4rem;
   border: none;
 
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0;
 }
 
 form legend {
@@ -88,6 +91,8 @@ form select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  cursor: pointer;
 }
 
 form label {
@@ -113,6 +118,8 @@ form button {
 
   margin-top: 2.5rem;
   transition: background-color 0.3s;
+
+  align-self: flex-end;
 }
 
 form button:hover {
@@ -120,3 +127,42 @@ form button:hover {
 
   cursor: pointer;
 }
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.items-grid li {
+  background-color: var(--background);
+  list-style: none;
+
+  border: 2px solid var(--background);
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  width: 11.875rem;
+  height: 11.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.items-grid li span {
+  color: var(--title-color);
+}
+
+.items-grid li.selected {
+  background-color: var(--desaturated);
+  border: 2px solid var(--primary-color-500);
+}
+
+/* .items-grid li img,
+.items-grid li span {
+    pointer-events: none;
+} */ // Solução do Maykão para evitar os cliques nas tags indesejadas 

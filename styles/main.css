@@ -1,10 +1,10 @@
 :root {
   --primary-color-500: #34cb79;
   --primary-color-400: #2fb86e;
-  --desaturado: #e1faec;
+  --desaturated: #e1faec;
   --title-color: #322153;
-  --textos: #6c6c80;
-  --textos-suporte: #a0a0b2;
+  --text-color-500: #6c6c80;
+  --text-color-400: #a0a0b2;
   --white: #fff;
   --background: #f0f0f5;
 }
