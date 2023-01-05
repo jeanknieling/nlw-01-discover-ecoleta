@@ -64,7 +64,7 @@ const handleSelectedItem = (event) => {
   */ // Minha solução
 
   // Verifica se existem itens selecinados, se sim
-  // Pegar os mitens selecionados
+  // Pegar os itens selecionados
   const alreadySelected = selectedItems.findIndex((item) => item == itemId);
 
   // Se já estiver selecionado, tirar da seleção

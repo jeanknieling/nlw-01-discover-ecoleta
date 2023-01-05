@@ -1,0 +1,94 @@
+body::after {
+    content: "";
+    position: fixed;
+    background-color: var(--white);
+    top: 16.25rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#page-search-results {
+  width: 90%;
+  max-width: 70rem;
+
+  margin: 0 auto;
+}
+
+#page-search-results header {
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-search-results header a {
+  color: var(--title-color);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+#page-search-results header a span {
+  margin-right: 1rem;
+  background: url('../assets/arrow-left.svg') no-repeat;
+
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+main {
+  margin: 3rem 0;
+}
+
+main h4 {
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+
+  margin-bottom: 2rem;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 1.5rem;
+}
+
+main .card img {
+  width: 100%;
+  height: 10rem;
+
+  object-fit: cover;
+
+  border-radius: 8px 8px 0 0;
+}
+
+main .card h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: var(--title-color);
+
+  margin-top: 2rem;
+}
+
+main .card h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+
+  color: var(--primary-color-500);
+
+  margin: 1.5rem 0;
+}
+
+main .card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  color: var(--text-color-500);
+}
