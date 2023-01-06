@@ -1,0 +1,82 @@
+@media (min-width: 650px) {
+  #page-create-point header a::after {
+    content: 'Voltar para a home';
+  }
+
+  #page-create-point form {
+    padding: 4rem;
+  }
+
+  #page-search-results header a::after {
+    content: 'Voltar para a home';
+  }
+}
+
+@media (max-width: 900px) {
+  #page-home {
+    background-position: 75vw bottom;
+  }
+
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home header a {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #page-home main {
+    align-items: center;
+  }
+
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #page-create-point form .field-group {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+  #page-create-point form .field-group .field + .field {
+    margin-left: 0;
+  }
+
+  #page-create-point form legend {
+    flex-direction: column;
+    align-items: start;
+
+    line-height: 2rem;
+  }
+
+  #page-create-point form button {
+    width: 100%;
+  }
+
+  #page-create-point .items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #page-create-point .items-grid  li {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1700px) {
+  #page-home {
+    background-position: 40vw;
+  }
+}
+
+@media (max-height: 760px) {
+  #page-home {
+    background-position-y: 200px;
+  }
+}

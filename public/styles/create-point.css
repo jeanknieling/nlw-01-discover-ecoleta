@@ -33,14 +33,14 @@ form {
   background: var(--white);
   border-radius: 8px;
 
-  display:flex;
+  display: flex;
   flex-direction: column;
 
   margin: 5rem auto;
 
   max-width: 45.625rem;
 
-  padding: 4rem;
+  padding: 1.25rem;
 }
 
 form h1 {
@@ -56,10 +56,16 @@ form fieldset {
 
 form legend {
   margin-top: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
 }
 
-form legend h2 {
-  margin-top: 1.5rem;
+form legend span {
+  color: var(--title-color);
 }
 
 form .field {
@@ -165,4 +171,4 @@ form button:hover {
 /* .items-grid li img,
 .items-grid li span {
     pointer-events: none;
-} */ // Solução do Maykão para evitar os cliques nas tags indesejadas 
+} */ // Solução do Maykão para evitar os cliques nas tags indesejadas
