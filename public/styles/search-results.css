@@ -1,12 +1,17 @@
+body {
+  background-color: var(--white);
+}
+
 body::after {
-    content: "";
-    position: fixed;
-    background-color: var(--white);
-    top: 16.25rem;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  background-color: var(--background);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 16.25rem;
+  z-index: -1;
 }
 
 #page-search-results {
@@ -49,6 +54,16 @@ main h4 {
   font-family: Roboto, sans-serif;
 
   margin-bottom: 2rem;
+}
+
+main h4 img {
+  max-width: 75%;
+  height: auto;
+
+  display: block;
+
+  margin: 8rem auto 0;
+  object-fit: cover;
 }
 
 main .cards {
